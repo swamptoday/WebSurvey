@@ -628,6 +628,7 @@ ul.sub-menu li:last-child {
 
 .mean-bar a.meanmenu-reveal {
   background-color: #F28123;
+  border-radius: 20%;
 }
 
 .main-menu-wrap {
@@ -723,7 +724,7 @@ nav.main-menu li a {
 }
 
 .sticky-wrapper.is-sticky .top-header-area {
-  background-color: #010a0f;
+  background-color: #03121b;
   padding: 15px 0;
 }
 
@@ -1346,13 +1347,22 @@ span.close-btn:hover {
   color: #fff;
 }
 
-a.mobile-show.search-bar-icon {
+.admin-icon-text {
+  position: relative;
+  bottom: 4px;
+}
+
+.admin-panel-settings-icon {
+  margin-right: 5px;
+}
+
+a.mobile-show.admin-panel-icon {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 
-a.mobile-show.search-bar-icon:hover {
+a.mobile-show.admin-panel-icon:hover {
   color: #F28123;
 }
 

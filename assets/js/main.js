@@ -149,7 +149,7 @@
         });
         
          // search form
-        $(".search-bar-icon").on("click", function(){
+        $(".admin-panel-icon").on("click", function(){
             $(".search-area").addClass("search-active");
         });
 
