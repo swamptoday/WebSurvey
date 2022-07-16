@@ -418,6 +418,28 @@ a.boxed-btn {
   padding: 10px 20px;
 }
 
+.submit-btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  display: block;
+  text-align: center;
+  margin-left: auto; 
+  margin-right: auto;
+  width:150px;
+  border-radius: 50px;
+  background-color: #F28123;
+  color: #fff;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+
+
+
+.submit-btn:hover {
+  background-color: #162133;
+  color: #F28123;
+}
+
 a.bordered-btn {
   font-family: 'Montserrat', sans-serif;
   display: inline-block;
@@ -440,7 +462,7 @@ a.read-more-btn:hover {
   color: #F28123;
 }
 
-a.boxed-btn, a.bordered-btn, a.cart-btn {
+a.boxed-btn, a.bordered-btn, a.cart-btn, a.submit-btn{
   border-radius: 50px;
 }
 
@@ -848,6 +870,27 @@ a.mobile-show {
   letter-spacing: 7px;
 }
 
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #F28123;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.nav-tabs a{
+  color:#051922;
+}
+
+.nav-tabs a:hover {
+  color: #F28123;
+}
+
+.form-check-input {
+  filter: hue-rotate(2.9rad);
+}
+
+
 /* -----------------------------------------------------------------------------
 
 # Footer Styles
@@ -1008,13 +1051,13 @@ a.navbar-brand:hover {
   opacity: 0.7;
 }
 
-a.boxed-btn {
+a.boxed-btn, .submit-btn {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
 }
 
-a.boxed-btn:hover {
+a.boxed-btn:hover, a.submit-btn:hover {
   background-color: #051922;
   color: #F28123;
 }
@@ -2780,4 +2823,58 @@ table.order-details tbody td {
   display: table-cell;
   vertical-align: middle;
   width: 100%;
+}
+
+
+/* -----------------------------------------------------------------------------
+
+# star rating
+
+----------------------------------------------------------------------------- */
+.rating-wrapper {
+
+  direction: rtl !important;
+} 
+
+.rating-wrapper label {
+    color: #e1e6f6;
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 2.2rem;
+    padding: 1rem .6rem;
+    transition: color 0.5s;
+  }
+  
+.rating-wrapper  svg {
+ -webkit-text-fill-color: transparent;
+ -webkit-filter: drop-shadow (4px 1px 6px rgba(198, 206, 237, 1));
+ filter:drop-shadow(5px 1px 3px rgba(198, 206, 237, 1));
+}
+
+
+
+.rating-wrapper  input {
+display: none;
+}
+
+.rating-wrapper  label:hover,
+.rating-wrapper  label:hover ~ label,
+.rating-wrapper  input:checked ~ label  {
+color: #F28123;
+}
+
+/* -----------------------------------------------------------------------------
+
+# tab content font
+
+----------------------------------------------------------------------------- */
+
+.tab-content p {
+ font-family: 'Open Sans', sans-serif;
+ font-size: 16px;
+ color:#000;
+}
+
+.question-p {
+  font-weight: bold;
 }

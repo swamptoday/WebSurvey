@@ -62,3 +62,4 @@ footer_section.addEventListener('click', function(){
         footer_section.classList.add("current-list-item");
     }
 })
+
