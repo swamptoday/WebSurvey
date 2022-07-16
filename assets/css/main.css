@@ -886,11 +886,9 @@ a.mobile-show {
   color: #F28123;
 }
 
-.form-check-input {
-  filter: hue-rotate(9rad);
+input[type='checkbox'], input[type='radio'] {
+  accent-color: #F28123;
 }
-
-
 /* -----------------------------------------------------------------------------
 
 # Footer Styles
